@@ -3,7 +3,7 @@
    @section('content')  
       <img id="pelu" src="https://phantom-elmundo.unidadeditorial.es/37812441ebf2e1d7b564b23077108513/resize/640/assets/multimedia/imagenes/2021/11/17/16371506566138.png">
                    <div class="texto">
-                   Llevamos el corte de cabello en la sangre. Somos una peluquería relajante y afable ubicado en Sevilla. Nuestro catálogo de servicios incluye a cortes sencillos y peinados hasta un cambio de look por completo. No importa lo que busques, podemos ofrecértelo. Si quieres destacar en una fiesta, nuestro equipo de estilistas talentosos puede ayudarte con un cambio de estilo.  Desde cortes de pelo hasta tintes, permanentes y mechas, estamos en la cima de los estándares de calidad, al crear estilos que engloban a cada personalidad. Si no estás seguro de lo que quieres, acércate y uno de nuestros empleados agradables te ayudará a encontrar la inspiración que necesitas, y sin estrés.</div>
+                   Llevamos el corte de cabello en la sangre. Somos una peluquería relajante y afable ubicado en Asturias. Nuestro catálogo de servicios incluye a cortes sencillos y peinados hasta un cambio de look por completo. No importa lo que busques, podemos ofrecértelo. Si quieres destacar en una fiesta, nuestro equipo de estilistas talentosos puede ayudarte con un cambio de estilo.  Desde cortes de pelo hasta tintes, permanentes y mechas, estamos en la cima de los estándares de calidad, al crear estilos que engloban a cada personalidad. Si no estás seguro de lo que quieres, acércate y uno de nuestros empleados agradables te ayudará a encontrar la inspiración que necesitas, y sin estrés.</div>
    <center>
                    <section class="ubicacion">
                        <article class="penas2">

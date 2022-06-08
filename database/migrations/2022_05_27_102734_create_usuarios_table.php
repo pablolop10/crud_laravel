@@ -21,7 +21,6 @@ class CreateUsuariosTable extends Migration
                 $table->string('email')->unique();
                 $table->timestamp('email_verified_at')->nullable();
                 $table->string('password');
-                $table->string('nombre');
                 $table->integer('edad');
                 $table->string('genero');
                 $table->boolean('tipo_usuario')->default(0); // 0 = suscriptor && 1 = administrador

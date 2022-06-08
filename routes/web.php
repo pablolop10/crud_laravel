@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\generalcontroller;
-use App\Http\Controllers\usuariocontroller;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\citascontroller;
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +27,7 @@ Route::post('/eliminar/{id}', [generalcontroller::class,'eliminar'])->name('elim
 Route::post('/editar/{id}', [generalcontroller::class,'editar'])->name('editar');
 Route::post('/guardar/{id}', [generalcontroller::class,'guardar'])->name('guardar');
 Auth::routes();
-
+Route::post('/citas', [citascontroller::class, 'guardarcita'])->name('guardarcita');
+Route::post('/citas/{h}/{m}/{s}', [citascontroller::class, 'guardarhora'])->name('guardarhora');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

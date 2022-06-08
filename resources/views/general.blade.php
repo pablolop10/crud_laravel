@@ -1,48 +1,50 @@
 @extends('layouts.app')
        
 @section('content')               
-<div id="divtotal" class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-         
-          <table  >
-          
-            <tr>
-            <th>
-              imagen
-            </th>
-            <th>
-              nombre
-            </th>
-            <th>
-              marca
-            </th>
-            <th>
-              precio
-            </th>
-          </tr> 
+ <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">  
         @if (isset($producto))
             @foreach ($producto as $item)
-            <tr>
-              <td><img id="com" src='{{$item->imagen}}'></td>
-              <td> {{$item->nombre}}</td>
-              <td> {{$item->marca}}</td>
-              <td> {{$item->precio}}€</td>
-           @if (isset(Auth::user()->tipo_usuario))  
-           @if (Auth::user()->tipo_usuario)
-            <td>  <form action="{{route('editar', $item->id)}}" method="post">
-              {{ csrf_field() }}<button class="button-36" type="submit">Editar</button></td>
-            </form>
-            <td><form action="{{route('eliminar', $item->id)}}" method="post">
-              {{ csrf_field() }}<button class="button-36"  type="submit">Eliminar</button></td>
-            </form>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src='{{$item->imagen}}'>
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <h5 class="fw-bolder">{{$item->nombre}}</h5>
+                    {{$item->precio}}€
+                </div>
+              </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+           <div class="text-center">
+            @if (isset(Auth::user()->tipo_usuario))  
+            @if (Auth::user()->tipo_usuario)
+             <div class="row">
+               <div class="col">
+             <form action="{{route('editar', $item->id)}}" method="post">
+              {{ csrf_field() }}
+            <button class="btn btn-outline-success text-success mt-auto" type="submit">Editar</button>
+          </form>
+               </div>
+               <div class="col">
+          <form action="{{route('eliminar', $item->id)}}" method="post">
+            {{ csrf_field() }}
+            <button class="btn btn-outline-danger text-danger mt-auto" type="submit" >Eliminar</button>
+          </form>
+               </div>
+            </div>
             @endif
             @endif
-            </tr>
-          
-           
+          </div>    
+          </div>
+        </div>
+        </div>
         @endforeach
         @endif
-          
-          </table>
-          
-        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   @endsection
