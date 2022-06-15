@@ -52,7 +52,7 @@ table {
            border-spacing: 50px 10px;
          }
          
- .lista {
+ #barranav {
              margin: 0 auto !important;
              background-color: rgb(161, 132, 103) !important;
              padding: 2% !important;
@@ -64,73 +64,13 @@ table {
          
          
          }
-.lista #opc{
-             
-             display: inline !important;
-             padding: 2% !important;
-             padding-bottom: 2.1% !important;
-          margin-right: 5% !important;
-          margin-left: 5% !important;
          
          
-         }
-         
-         
-.lista #opc:first-child{
-         
-          margin-left: 20% !important;
-         
-         
-         }
-         
-  .lista #acc1 {
-             display: inline !important;
-             padding: 2% !important;
-             padding-bottom: 2.1% !important;
-             margin-left: 10% !important;
-         }
-         
- .lista #acc2 {
-             display: inline !important;
-             padding: 2% !important;
-             padding-bottom: 2.1% !important;
-         }
-         
-.lista #opclog{
-             
-             display: inline !important;
-             padding: 2% !important;
-             padding-bottom: 2.1% !important;
-          margin-right: 5% !important;
-          margin-left: 5% !important;
-         
-         
-         }
-         
-.lista #opclog:first-child{
-             
-          
-          margin-left: 20% !important;
-         
-         
-         }
-.lista #acclog{
-             
-             display: inline !important;
-             padding: 2% !important;
-             padding-bottom: 2.1% !important;
-          margin-left: 10% !important;
-         
-         
-         }
-         
-         
-         
-.lista li:hover {
+#barranav li:hover {
            background-color: #85623b !important;
          }
          
-  .lista li a {
+  #barranav li a {
          font-size:16px !important;
          color: black !important;
          text-decoration: none !important;
@@ -168,6 +108,62 @@ table {
   
 }
 
+#historialcitas th, td {
+             
+            
+           padding:10px;
+           
+          
+            }
+#historialcitas th {
+  text-align: center;
+}
+
+
+#historialcitas {
+  border-spacing: 30px 10px;
+           border-collapse: separate;
+           background-color: white;
+           margin-top: 2%;
+           margin-bottom: 2%;
+}
+
+.buttonpasado {
+  background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttoneliminar {
+  background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttoneliminar:hover {
+    background-color: #f44336;
+    color: white;
+}
          
          
 .button-36 {
@@ -195,6 +191,13 @@ table {
          box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
          transition-duration: .1s;
          }
+
+  #fotoperfil {
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5%;
+    border-radius: 5px;
+  }
          
   #pelu {
          display: block;
@@ -256,32 +259,328 @@ table {
          }
          
          
+
+         .dropdown {
+  position: relative;
+  display: inline-block !important;
+             padding: 2% !important;
+             padding-bottom: 2.1% !important;
+          margin-left: 10% !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+         
          
 @media (min-width: 768px) {
          .button-36 {
          padding: 0 2.6rem;
          }
          }
+
+
+         .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  margin-top: 26%;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+@media (max-width:1675px)
+{
+  #fotoperfil
+  {
+    display:none;
+  
+  }
+}
+@media (max-width:1000px)
+{
+  #usuimg
+  {
+    display:none;
+  
+  }
+}
+@media (max-width:500px)
+{
+  #verprodu
+  {
+    margin-top: 50%;
+  
+  }
+
+  #acc3 {
+    display: none;
+  }
+
+ 
+
+}
+
+
+@media (max-width:450px)
+{
+  #producinfo
+  {
+    display: none;
+  
+  }
+  #verprodu
+  {
+    margin-top:-60%;
+   
+  
+  }
+ 
+  #citaopc {
+    display: none;
+  }
+}
+
+@media (min-height:900px)
+{
+ .site-footer {
+  margin-top: 50%;
+ }
+}
+
+@media (max-width: 1000px)
+{
+  #editarprodu {
+    margin-top: 20%;
+  }
+}
+
+
+/* bootstrap */
+.collapse:not(.show){display:none}.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:.5rem 1rem}.navbar>.container,.navbar>.container-fluid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-text{display:inline-block;padding-top:.5rem;padding-bottom:.5rem}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler:focus,.navbar-toggler:hover{text-decoration:none}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%}@media (max-width:575.98px){.navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid{padding-right:0;padding-left:0}}@media (min-width:576px){.navbar-expand-sm{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-sm .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-sm .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-sm .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-sm .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-sm .navbar-toggler{display:none}}@media (max-width:767.98px){.navbar-expand-md>.container,.navbar-expand-md>.container-fluid{padding-right:0;padding-left:0}}@media (min-width:768px){.navbar-expand-md{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-md .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-md>.container,.navbar-expand-md>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-md .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-md .navbar-toggler{display:none}}@media (max-width:991.98px){.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid{padding-right:0;padding-left:0}}@media (min-width:992px){.navbar-expand-lg{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-lg .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}@media (max-width:1199.98px){.navbar-expand-xl>.container,.navbar-expand-xl>.container-fluid{padding-right:0;padding-left:0}}@media (min-width:1200px){.navbar-expand-xl{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-xl .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-xl .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-xl .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-xl>.container,.navbar-expand-xl>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-xl .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-xl .navbar-toggler{display:none}}.navbar-expand{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand>.container,.navbar-expand>.container-fluid{padding-right:0;padding-left:0}.navbar-expand .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand .navbar-nav .dropdown-menu{position:absolute}.navbar-expand .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand>.container,.navbar-expand>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand .navbar-toggler{display:none}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.5)}.navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover{color:rgba(0,0,0,.7)}.navbar-light .navbar-nav .nav-link.disabled{color:rgba(0,0,0,.3)}.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{color:rgba(0,0,0,.9)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.5);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-light .navbar-text{color:rgba(0,0,0,.5)}.navbar-light .navbar-text a{color:rgba(0,0,0,.9)}.navbar-light .navbar-text a:focus,.navbar-light .navbar-text a:hover{color:rgba(0,0,0,.9)}.navbar-dark .navbar-brand{color:#fff}.navbar-dark .navbar-brand:focus,.navbar-dark .navbar-brand:hover{color:#fff}.navbar-dark .navbar-nav .nav-link{color:rgba(255,255,255,.5)}.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:rgba(255,255,255,.75)}.navbar-dark .navbar-nav .nav-link.disabled{color:rgba(255,255,255,.25)}.navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .show>.nav-link{color:#fff}.navbar-dark .navbar-toggler{color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.1)}.navbar-dark .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-dark .navbar-text{color:rgba(255,255,255,.5)}.navbar-dark .navbar-text a{color:#fff}.navbar-dark .navbar-text a:focus,.navbar-dark .navbar-text a:hover{color:#fff}
+
+
+
+
+
+
+
+
+
+
+/* bootstrap */
+
+
+
+
+
+
+
   </style>
 
 </head>
 <body>
+
+  
+
+
+ 
+
+
+
   
                         @guest
       
-                   <div class="lista">
-                            <center>
-                <li id="opc"><a id="enlace" href="{{route('inicio')}}">Inicio</a></li>
-                <li id="opc"><a id="enlace" href="{{route('menu')}}">
-                  Productos</a></li>
-                  <li id="opc"><a id="enlace" href="{{route('citas')}}">
-                  Citas</a></li>
-                  <li id="acc1"><a id="enlace" href="{{route('login')}}">
-                Iniciar Sesion</a></li>
-                <li id="acc2"><a id="enlace" href="{{route('register')}}">
-                Registrarse</a></li>
-                            </center>
-                                </div>
+                        <nav id="barranav" class="navbar navbar-expand">
+                         
+                            <ul class="navbar-nav mr-auto" >
+                              <li id="opc" class="nav-item" style="margin-left: 10%;">
+                                <a class="nav-link" href="{{route('inicio')}}">Inicio </a>
+                              </li>
+                              <li id="opc" class="nav-item" style="margin-left: 10%;">
+                                <a class="nav-link" href="{{route('menu')}}" >Productos</a>
+                              </li>
+                              <li id="opc"class="nav-item" style="margin-left: 10%;">
+                                <a id="citaopc" class="nav-link" href="{{route('login')}}">Citas</a>
+                              </li>
+                            </ul>
+                          
+                            
+                            <li id="acc1" class="nav-item my-2 my-lg-0" style="display: inline">
+                              <a class="nav-link" href="{{route('login')}}">Iniciar Sesion</a>
+                            </li>
+                            <li id="acc2" class="nav-item my-2 my-lg-0" style="display: inline">
+                              <a id="acc3" class="nav-link" href="{{route('register')}}">Registrarse</a>
+                            </li>
+                            </ul>
+                      
+                        </nav> 
 
                             @if (Route::has('login'))
                             @yield('content')
@@ -290,38 +589,46 @@ table {
                             
                         @else
                               
-          <div class="lista">
-           <center>
 
-           <li id="opclog"><a id="enlace" href="{{route('inicio')}}">Inicio</a></li>
-            <li id="opclog"><a id="enlace" href="{{route('menu')}}">
-                  Productos</a></li>
-            <li id="opclog"><a id="enlace" href="{{route('citas')}}">
-                  Citas</a></li>
-                            <li id="acclog">
-                                <a>
-                                    {{ Auth::user()->name }}
-                                </a>                       
-                            </li>
-         </center>
-          </div>
+ <nav id="barranav" class="navbar navbar-expand">
+    
+  
+   
+      
+      <ul class="navbar-nav mr-auto" >
+        <li id="opc" class="nav-item active" style="margin-left: 10%;">
+          <a class="nav-link" href="{{route('inicio')}}">Inicio </a>
+        </li>
+        <li id="opc" class="nav-item" style="margin-left: 10%;">
+          <a class="nav-link" href="{{route('menu')}}" >Productos</a>
+        </li>
+        <li id="opc"class="nav-item" style="margin-left: 10%;">
+          <a class="nav-link" href="{{route('citas')}}">Citas</a>
+        </li>
+      </ul>
+    
+      <li id="acc1" class="nav-item my-2 my-lg-0" style="display: inline; width: 10%;">
+        <a class="nav-link" id="usuimg"> {{ Auth::user()->user }} <img id="fotoperfil" src="{{Auth::user()->imagen}}"></a>
+      </li>
+      <li id="acc2" class="nav-item my-2 my-lg-0" style="display: inline">
+                              <a class="nav-link" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                 {{ __('Logout') }}
+                             </a>
+                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
+                                 @csrf
+                             </form>
+                              
+            </li>
+     
+    
+  </nav> 
 
-                            <div>
-                                    <a id="enlace" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                        @csrf
-                                    </form>
-                        </div>
          
 @yield('content')
                      @endguest
                     
-  
-  
+             
 </body>
 </html>

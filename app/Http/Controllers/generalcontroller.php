@@ -13,6 +13,12 @@ class generalcontroller extends Controller
         return view('inicio');
      }
 
+     public function productos($id) {
+        // $tareas = array("comprar el pan","estudiar cliente","sacar al perro");
+   $mostrar= productos::find($id);
+        return view('productos', ["mostrar" => $mostrar]);
+     }
+
 
 
     public function menu() {

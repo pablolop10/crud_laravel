@@ -23,6 +23,7 @@ Route::post('/guardarcita', ['as' => 'save-date',
                                 return '';
                             }]);
 Route::get('/menu', [generalcontroller::class,'menu'])->name('menu');
+Route::get('/menu/{id}', [generalcontroller::class,'productos'])->name('productos');
 Route::post('/eliminar/{id}', [generalcontroller::class,'eliminar'])->name('eliminar');
 Route::post('/editar/{id}', [generalcontroller::class,'editar'])->name('editar');
 Route::post('/guardar/{id}', [generalcontroller::class,'guardar'])->name('guardar');
@@ -30,4 +31,5 @@ Auth::routes();
 Route::post('/citas', [citascontroller::class, 'guardarcita'])->name('guardarcita');
 Route::post('/citas/{h}/{m}/{s}', [citascontroller::class, 'guardarhora'])->name('guardarhora');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::post('/citas/{h}/{m}/{s}/{userconf}', [citascontroller::class, 'confirmarcita'])->name('confirmarcita');
+Route::post('/citas/{id}', [citascontroller::class, 'eliminarcita'])->name('eliminarcita');
